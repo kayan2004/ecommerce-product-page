@@ -197,7 +197,7 @@ hr {
     padding: 50px 15%;
   }
   .product-image-container {
-    max-height: 500px !important;
+    max-height: 450px !important;
     margin-bottom: 20px;
     border-radius: 16px;
   }
@@ -424,7 +424,7 @@ hr {
     align-items: center;
     background-color: white;
     position: absolute;
-    top: 45%;
+    top: 35%;
   }
   .previous-button {
     left: -5%;
