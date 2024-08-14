@@ -25,6 +25,7 @@ const ProductImageDesktop = () => {
         <img src={images[currentImage]} onClick={openDialog}></img>
       </div>
       <ThumbNails
+        currentImage={currentImage}
         onClick={(index) => {
           setCurrentImage(index);
         }}
@@ -79,6 +80,7 @@ const ProductImageDesktop = () => {
           </svg>
         </button>
         <ThumbNails
+          currentImage={currentImage}
           onClick={(index) => {
             setCurrentImage(index);
           }}

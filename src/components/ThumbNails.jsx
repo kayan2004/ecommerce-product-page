@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import PropTypes from "prop-types";
-const ThumbNails = ({ onClick }) => {
+const ThumbNails = ({ onClick, currentImage }) => {
   const thumbnails = [
     "/assets/image-product-1-thumbnail.jpg",
     "/assets/image-product-2-thumbnail.jpg",
@@ -11,7 +12,9 @@ const ThumbNails = ({ onClick }) => {
       {thumbnails.map((thumbnail, index) => (
         <img
           key={index}
-          className="thumbnail-image"
+          className={`thumbnail-image ${
+            index === currentImage ? "active" : ""
+          }`}
           src={thumbnail}
           tabIndex={0}
           onClick={() => onClick(index)}
